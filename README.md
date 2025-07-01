@@ -1,5 +1,5 @@
 # AVDNet
-### **[SPL-2025] Adaptive Video Demoiréing Network with Subtraction-Guided Alignment**
+### **[IEEE Signal Processing Letters, 2025] Adaptive Video Demoiréing Network with Subtraction-Guided Alignment**
 
 Seung-Hun Ok, Young-Min Choi, Seung-Wook Kim, Se-Ho Lee
 
