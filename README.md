@@ -41,7 +41,8 @@ project_root/
 ```
 
 ## Pretrained Models
-You can download the pretrained model for testing from [this link](https://www.dropbox.com/scl/fo/t8w8gfd1hz3m445z3tso2/ACHqeKW5iXnhLSaLlJXCMsY?rlkey=183mti7url38nvrt6gfkaajr5&st=fs9lzkqu&dl=0)
+You can download the pretrained model for testing from [this link](https://www.dropbox.com/scl/fo/t8w8gfd1hz3m445z3tso2/ACHqeKW5iXnhLSaLlJXCMsY?rlkey=183mti7url38nvrt6gfkaajr5&st=fs9lzkqu&dl=0)  
+Place the downloaded model in the `AVDNet/experiments/` directory before running the test.
 > **Note**: During testing, make sure to set `strict_load: false` in your option file to avoid mismatch errors when loading the pretrained weights.
 
 ## Train/Test
