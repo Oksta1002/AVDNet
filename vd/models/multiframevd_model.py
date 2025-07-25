@@ -14,7 +14,6 @@ from deepspeed.profiling.flops_profiler import get_model_profile
 from deepspeed.accelerator import get_accelerator
 import torchvision.transforms.functional as TF
 from PIL import Image
-import matplotlib.pyplot as plt
 import numpy as np
 import os
 
