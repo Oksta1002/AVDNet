@@ -4,7 +4,9 @@ Seung-Hun Ok, Young-Min Choi, Seung-Wook Kim, Se-Ho Lee
 [Paper](https://doi.org/10.1109/LSP.2025.3585820) | [Supplementary Materials](https://drive.google.com/file/d/1Bk-R0x-ACmo8sU7rr86cbPRTgkrHsTy5/view?usp=drive_link)
 
 ## Introduction
-![AVDNet Architecture](network.png)  
+<p align="center">
+  <img src="network.png" alt="AVDNet Architecture" width="600"/>
+</p>
 We propose an adaptive video demoiréing network (AVDNet) that effectively suppresses moiré artifacts while preserving temporal consistency. AVDNet transforms moiré-contaminated frames into temporally consistent clean frames by employing two key components: the adaptive bandpass block (ABB) and the subtraction-guided alignment block (SGAB). First, ABB applies an adaptive bandpass filter (ABF) to each frame, modulated by input-specific coefficients to selectively attenuate moiré frequencies based on the spectral distribution of the input. Then, SGAB aligns consecutive frames by exploiting subtraction maps, which effectively suppresses the propagation of moiré artifacts across time. Experimental results show that AVDNet outperforms existing video demoiréing methods, while maintaining a compact and efficient network architecture.
 
 ## Environment
@@ -47,7 +49,7 @@ The following command runs training on the **iPhone-V1** dataset using **GPU 0**
 ```
 CUDA_VISIBLE_DEVICES=0 python train.py -opt options/train/Train_ipv1.yml
 ```
-The following command runs testing on the **iPhone-V1** dataset using **GPU 3**:
+The following command runs testing on the **TCL-V2** dataset using **GPU 3**:
 ```
 CUDA_VISIBLE_DEVICES=3 python test.py -opt options/test/Test_tclv2.yml
 ```
