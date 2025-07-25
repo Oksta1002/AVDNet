@@ -1,0 +1,34 @@
+name: Test_ipv1.yml
+model_type: MultiFrameVDModel
+num_gpu: 1  # set num_gpu: 0 for cpu mode
+manual_seed: 0
+
+datasets:
+  test:
+    name: MultiFrameVD
+    type: MultiFrameVDPairedImageDataset
+    dataroot_gt: ../datasets/homo/iphone/test/target
+    dataroot_lq: ../datasets/homo/iphone/test/source
+    io_backend:
+      type: disk
+    batch_size: 1
+    num_worker: 0
+
+# network structures
+network:
+  type: AVDNet
+
+# path
+path:
+  pretrain_network: experiments/Train_ipv1.yml/models/net_latest.pth
+  strict_load: false
+  param_key: 'params_ema'
+
+# validation settings
+val:
+  save_img: true
+  metrics:
+    psnr:
+      type: calculate_vd_psnr
+    ssim:
+      type: calculate_vd_ssim
