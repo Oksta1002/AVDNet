@@ -10,10 +10,11 @@ The experiments were conducted using the following software environment:
 ## Dataset
 The dataset used in our project can be downloaded from the following link:  
 - **VDmoire**: [GitHub](https://github.com/CVMI-Lab/VideoDemoireing)  
+
 After downloading the dataset, please place the folders as follows:
 ```
 project_root/
-    ├── avdnet/
+    ├── AVDNet/
     │   ├── experiments/
     │   │   ...
     │   └── train.py
@@ -25,8 +26,7 @@ project_root/
 ```
 
 ## Pretrained Models
-You can download the pretrained models form the following links:  
-- **VDmoire**: [dropbox](https://www.dropbox.com/scl/fo/t8w8gfd1hz3m445z3tso2/ACHqeKW5iXnhLSaLlJXCMsY?rlkey=183mti7url38nvrt6gfkaajr5&st=fs9lzkqu&dl=0)  
+You can download the pretrained model for testing from [this link](https://www.dropbox.com/scl/fo/t8w8gfd1hz3m445z3tso2/ACHqeKW5iXnhLSaLlJXCMsY?rlkey=183mti7url38nvrt6gfkaajr5&st=fs9lzkqu&dl=0)
 > **Note**: During testing, make sure to set `strict_load: false` in your option file to avoid mismatch errors when loading the pretrained weights.
 
 ## Citation
