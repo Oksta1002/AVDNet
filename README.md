@@ -1,7 +1,6 @@
 # AVDNet
-### **[IEEE Signal Processing Letters, 2025] Adaptive Video Demoiréing Network with Subtraction-Guided Alignment**
+**[IEEE Signal Processing Letters, 2025] Adaptive Video Demoiréing Network with Subtraction-Guided Alignment**
 Seung-Hun Ok, Young-Min Choi, Seung-Wook Kim, Se-Ho Lee
-
 [Paper](https://doi.org/10.1109/LSP.2025.3585820) | [Supplementary Materials](https://drive.google.com/file/d/1Bk-R0x-ACmo8sU7rr86cbPRTgkrHsTy5/view?usp=drive_link)
 
 ##  Environment
@@ -11,7 +10,6 @@ The experiments were conducted using the following software environment:
 ## Dataset
 The dataset used in our project can be downloaded from the following link:
 - **VDmoire**: [GitHub](https://github.com/CVMI-Lab/VideoDemoireing)
-
 After downloading the dataset, please place the folders as follows:
 ```
 project_root/
