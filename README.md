@@ -5,7 +5,16 @@ Seung-Hun Ok, Young-Min Choi, Seung-Wook Kim, Se-Ho Lee
 
 ##  Environment
 The experiments were conducted using the following software environment:    
-* PyTorch: 
+* Python: 3.11
+* CUDA: 12.1
+* PyTorch: 2.1.0
+* Torchvision: 0.16.0
+* scikit-image
+* opencv-python
+* deepspeed
+* lpips
+* tensorboardx
+* wandb
 
 ## Dataset
 The dataset used in our project can be downloaded from the following link:  
@@ -29,8 +38,19 @@ project_root/
 You can download the pretrained model for testing from [this link](https://www.dropbox.com/scl/fo/t8w8gfd1hz3m445z3tso2/ACHqeKW5iXnhLSaLlJXCMsY?rlkey=183mti7url38nvrt6gfkaajr5&st=fs9lzkqu&dl=0)
 > **Note**: During testing, make sure to set `strict_load: false` in your option file to avoid mismatch errors when loading the pretrained weights.
 
+## Train/Test
+The following command runs training on the **iPhone-V1** dataset using **GPU 0**:
+```
+CUDA_VISIBLE_DEVICES=0 python train.py -opt options/train/Train_ipv1.yml
+```
+The following command runs testing on the **iPhone-V1** dataset using **GPU 3**:
+```
+CUDA_VISIBLE_DEVICES=3 python test.py -opt options/test/Test_tclv2.yml
+```
+You can run training or testing by selecting the appropriate `.yml` file and specifying the GPU to use.
+
 ## Citation
-If you use this code or the results in your research, please cite the following paper:  
+Please cite the following paper if you use this code in your research:  
 ```bibtex
 @article{ok2025adaptive,
 title = {Adaptive Video Demoiréing Network With Subtraction-Guided Alignment},
