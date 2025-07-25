@@ -11,7 +11,7 @@ We propose an adaptive video demoiréing network (AVDNet) that effectively suppr
 
 ## Environment
 The experiments were conducted using the following software environment:    
-* Python: 3.11
+* Python: 3.11.4
 * CUDA: 12.1
 * PyTorch: 2.1.0
 * Torchvision: 0.16.0
