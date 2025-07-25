@@ -24,9 +24,7 @@ The experiments were conducted using the following software environment and libr
 * wandb
 
 ## Dataset
-The dataset used in our project can be downloaded from the following link:  
-- **VDmoire**: [GitHub](https://github.com/CVMI-Lab/VideoDemoireing)  
-
+We use the VDmoire dataset in our project, which is available on [GitHub](https://github.com/CVMI-Lab/VideoDemoireing).  
 After downloading the dataset, please place the folders as follows:
 ```
 project_root/
