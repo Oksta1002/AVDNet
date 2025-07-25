@@ -21,7 +21,6 @@ The experiments were conducted using the following software environment:
 * deepspeed
 * lpips
 * tensorboard
-* tensorboardx
 * wandb
 
 ## Dataset
