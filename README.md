@@ -57,7 +57,7 @@ You can run training or testing by selecting the appropriate `.yml` configuratio
 
 ## Results
 <p align="center">
-  <img src="results.png" alt="Results" width="600"/>
+  <img src="results.png" alt="Results" width="1000"/>
 </p>
 
 ## Citation
