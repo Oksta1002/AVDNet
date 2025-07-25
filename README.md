@@ -15,10 +15,12 @@ The experiments were conducted using the following software environment:
 * CUDA: 12.1
 * PyTorch: 2.1.0
 * Torchvision: 0.16.0
+* numpy: 1.26.4
 * scikit-image
 * opencv-python
 * deepspeed
 * lpips
+* tensorboard
 * tensorboardx
 * wandb
 
