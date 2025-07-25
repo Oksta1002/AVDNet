@@ -31,14 +31,14 @@ After downloading the dataset, please place the folders as follows:
 ```
 project_root/
     ├── AVDNet/
-    │   ├── experiments/
+    │   ├── experiments/...
     │   │   ...
     │   └── train.py
     └── datasets/
-        ├── homo/
+        ├── homo/...
         └── optical/
-            ├── iphone/
-            └── tcl/
+            ├── iphone/...
+            └── tcl/...
 ```
 
 ## Pretrained Models
