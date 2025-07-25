@@ -15,16 +15,18 @@ The experiments were conducted using the following software environment:
 The dataset used in our project can be downloaded from the following link:
 - **VDmoire**: [GitHub](https://github.com/CVMI-Lab/VideoDemoireing)
 After downloading the dataset, please place the folders as follows:
-    project_root/
-        ├── avdnet/
-        │   ├── experiments/
-        │   │   ...
-        │   └── train.py
-        └── datasets/
-            ├── homo/
-            └── optical/
-                ├── iphone/
-                └── tcl/
+```
+project_root/
+    ├── avdnet/
+    │   ├── experiments/
+    │   │   ...
+    │   └── train.py
+    └── datasets/
+        ├── homo/
+        └── optical/
+            ├── iphone/
+            └── tcl/
+```
 
 ### Pretrained Models
 ---
@@ -45,5 +47,7 @@ pages = {2733--2737},
 year = {2025}
 }
 ```
+
 ### Contact
+---
 For any questions, please contact: cornking123@jbnu.ac.kr.
