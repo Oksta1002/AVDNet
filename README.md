@@ -10,7 +10,7 @@ Seung-Hun Ok, Young-Min Choi, Seung-Wook Kim, Se-Ho Lee
 We propose an adaptive video demoiréing network (AVDNet) that effectively suppresses moiré artifacts while preserving temporal consistency. AVDNet transforms moiré-contaminated frames into temporally consistent clean frames by employing two key components: the adaptive bandpass block (ABB) and the subtraction-guided alignment block (SGAB). First, ABB applies an adaptive bandpass filter (ABF) to each frame, modulated by input-specific coefficients to selectively attenuate moiré frequencies based on the spectral distribution of the input. Then, SGAB aligns consecutive frames by exploiting subtraction maps, which effectively suppresses the propagation of moiré artifacts across time. Experimental results show that AVDNet outperforms existing video demoiréing methods, while maintaining a compact and efficient network architecture.
 
 ## Environment
-The experiments were conducted using the following software environment:    
+The experiments were conducted using the following software environment and libraries:  
 * Python: 3.11.4
 * CUDA: 12.1
 * PyTorch: 2.1.0
@@ -26,7 +26,6 @@ The experiments were conducted using the following software environment:
 ## Dataset
 The dataset used in our project can be downloaded from the following link:  
 - **VDmoire**: [GitHub](https://github.com/CVMI-Lab/VideoDemoireing)  
-
 After downloading the dataset, please place the folders as follows:
 ```
 project_root/
@@ -42,20 +41,20 @@ project_root/
 ```
 
 ## Pretrained Models
-You can download the pretrained model for testing from [this link](https://www.dropbox.com/scl/fo/t8w8gfd1hz3m445z3tso2/ACHqeKW5iXnhLSaLlJXCMsY?rlkey=183mti7url38nvrt6gfkaajr5&st=fs9lzkqu&dl=0)  
-Place the downloaded model in the `AVDNet/experiments/` directory before running the test.
+You can download the pretrained model for testing from [this link](https://www.dropbox.com/scl/fo/t8w8gfd1hz3m445z3tso2/ACHqeKW5iXnhLSaLlJXCMsY?rlkey=183mti7url38nvrt6gfkaajr5&st=fs9lzkqu&dl=0).  
+Make sure to place it in the `AVDNet/experiments/` directory before running the test.
 > **Note**: During testing, make sure to set `strict_load: false` in your option file to avoid mismatch errors when loading the pretrained weights.
 
 ## Train/Test
-The following command runs training on the **iPhone-V1** dataset using **GPU 0**:
+The following is an example command for training on the **iPhone-V1** dataset using **GPU 0**:
 ```
 CUDA_VISIBLE_DEVICES=0 python train.py -opt options/train/Train_ipv1.yml
 ```
-The following command runs testing on the **TCL-V2** dataset using **GPU 3**:
+The following is an example command for testing on the **TCL-V2** dataset using **GPU 3**:
 ```
 CUDA_VISIBLE_DEVICES=3 python test.py -opt options/test/Test_tclv2.yml
 ```
-You can run training or testing by selecting the appropriate `.yml` file and specifying the GPU to use.
+You can run training or testing by selecting the appropriate `.yml` configuration file and specifying the GPU to use.
 
 ## Citation
 Please cite the following paper if you use this code in your research:  
