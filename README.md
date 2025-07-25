@@ -70,5 +70,9 @@ year = {2025}
 }
 ```
 
+## Acknowledgement
+Our work was inspired by [MBCNN](https://github.com/zhenngbolun/Learnbale_Bandpass_Filter.git) and [DTNet](https://github.com/rebeccaeexu/DTNet.git).  
+We gratefully acknowledge the authors for making their code publicly available.
+
 ## Contact
 For any questions, please contact: cornking123@jbnu.ac.kr.
